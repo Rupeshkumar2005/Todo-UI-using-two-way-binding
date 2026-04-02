@@ -8,7 +8,11 @@ import Wrapper from './Components/Wrapper.jsx';
 import "./index.css";
 import { Toastify } from 'toastify';
 
-createRoot(document.getElementById('root')).render(<Wrapper App={<App />}/>)
+createRoot(document.getElementById('root')).render(<Wrapper>
+   <App />
+   <ToastContainer position="top-center"/>
 
-  //<ToastContainer position="top-center"/> */}
+</Wrapper>)
+
+ 
 
